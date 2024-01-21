@@ -10,6 +10,14 @@ body{
     background-color: #ffffff;
 }
 
+header .card1{
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header{
     background-image:linear-gradient(rgba(219, 219, 219, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/img/malay2.jpeg");
     background-size: cover;
@@ -194,6 +202,93 @@ header{
     margin-bottom: 10px;
     color: #08015e;
 }
+
+.trip1{
+    background-image:linear-gradient(rgba(219, 219, 219, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/img/penida.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.trip1 h1{
+    color: #012b5e;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.trip1 h1 span{
+    color: #c77904;
+}
+
+.trip1 .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.trip1 .container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.trip1 .container .card  .img-box{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.trip1 .container .card:hover{
+    height: 300px;
+}
+
+.trip1 .container .card:hover .img-box{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.trip1 .container .card .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip1 .container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.trip1 .container .card:hover .content{
+    top: 130px;
+    height: 250px;
+}
+
 .trip{
     background-image:linear-gradient(rgba(219, 219, 219, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/img/jenis.jpg");
     background-size: cover;
@@ -342,6 +437,84 @@ header{
 .pantai .box-pantai .box button:hover{
     background-color: #012b5e;
     transition: all .3s ease;
+}
+
+.info .box-daftar{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.info .box-daftar h1{
+    margin-bottom: 50px;
+}
+
+.info .box-daftar h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+    animation: animasi;
+    -webkit-animation: animasi 2s infinite;
+}
+
+@keyframes animasi{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.info .box-daftar button:hover{
+    background-color: #924701;
+}
+.info .box-daftar button{
+    border: none;
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #c55f00;
+    color: white;
+    padding-inline: 10px;
+    
+}
+
+.info .box-daftar button a{
+    text-decoration: none;
+    color: white;
+}
+
+.info .box-daftar button i{
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline: 5px;
+}
+
+.info .socials i{
+    color: #924701;
+}
+
+.info .home{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.info .home button:hover{
+    background-color: #924701;
+}
+.info .home button{
+    border: none;
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #c55f00;
+    color: white;
+    padding-inline: 10px;
 }
 
 .daftar{
@@ -554,6 +727,38 @@ header{
         overflow: hidden;
         border-radius: 10px;
     }
+
+    .trip1 .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px 50px;
+        padding: 70px 5px;
+    }
+
+    .trip1 .container .card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 370px;
+        max-width: 100%;
+        height: 300px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+    }
+
+    .trip1 .container .card  .img-box{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
     
 }
 
@@ -601,6 +806,42 @@ header{
     
 
     .trip .container .card  .img-box{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .trip1 .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px 50px;
+        padding: 70px 5px;
+    }
+
+    .trip1 .container .card:hover{
+        height: 400px;
+    }
+    .trip1 .container .card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 370px;
+        max-width: 100%;
+        height: 300px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+    }
+    
+
+    .trip1 .container .card  .img-box{
         position: absolute;
         top: 20px;
         width: 300px;
@@ -689,6 +930,42 @@ header{
     
 
     .trip .container .card  .img-box{
+        position: absolute;
+        top: 20px;
+        width: 200px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .trip1 .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px 50px;
+        padding: 70px 2px;
+    }
+
+    .trip1 .container .card:hover{
+        height: 300px;
+    }
+    .trip1 .container .card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 370px;
+        max-width: 100%;
+        height: 300px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+    }
+    
+
+    .trip1 .container .card  .img-box{
         position: absolute;
         top: 20px;
         width: 200px;
