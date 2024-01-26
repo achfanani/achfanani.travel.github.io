@@ -686,6 +686,19 @@ header{
 
 
 @media screen and (max-width:990px){
+
+    .hero1 .harga{
+        color: white;
+        margin-top: 10px;
+    }
+    
+    .hero1 span{
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    
     .menu-bar{
         display: block;
     }
