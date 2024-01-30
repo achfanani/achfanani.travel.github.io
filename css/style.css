@@ -1166,6 +1166,28 @@ header{
     width: 100%;
 }
 
+.manca3 .chat{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.manca3 .chat h3{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.manca3 .chat a:hover{
+    background-color: #c55f00;
+}
+.manca3 .chat a{
+    text-decoration: none;
+    background-color: #c77904;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
 .services{
     width: 100%;
     min-height: 50vh;
